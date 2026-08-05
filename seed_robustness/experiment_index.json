@@ -1,0 +1,1040 @@
+{
+  "canonical_evaluation_seed": 123,
+  "evaluation_seeds": [
+    123,
+    456,
+    789,
+    2027,
+    31415
+  ],
+  "evaluations": [
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_0000000007/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_0000000007/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_0000000007/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_0000000007/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_0000000007/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_1315039478/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_1315039478/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_1315039478/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_1315039478/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_1315039478/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_0397525346/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_0397525346/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_0397525346/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_0397525346/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_0397525346/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_2083438954/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_2083438954/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_2083438954/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_2083438954/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_2083438954/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_0811301288/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_0811301288/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_0811301288/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_0811301288/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_0811301288/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_1513855197/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_1513855197/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_1513855197/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_1513855197/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_1513855197/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_1900183420/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_1900183420/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_1900183420/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_1900183420/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_1900183420/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar2/train_seed_1667329077/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar2/train_seed_1667329077/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar2/train_seed_1667329077/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar2/train_seed_1667329077/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 2,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar2/train_seed_1667329077/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_0000000007/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_0000000007/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_0000000007/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_0000000007/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_0000000007/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_1315039478/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_1315039478/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_1315039478/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_1315039478/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_1315039478/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_0397525346/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_0397525346/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_0397525346/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_0397525346/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_0397525346/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_2083438954/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_2083438954/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_2083438954/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_2083438954/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_2083438954/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_0811301288/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_0811301288/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_0811301288/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_0811301288/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_0811301288/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_1513855197/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_1513855197/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_1513855197/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_1513855197/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_1513855197/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_1900183420/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_1900183420/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_1900183420/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_1900183420/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_1900183420/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar6/train_seed_1667329077/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar6/train_seed_1667329077/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar6/train_seed_1667329077/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar6/train_seed_1667329077/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 6,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar6/train_seed_1667329077/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_0000000007/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_0000000007/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_0000000007/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_0000000007/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_0000000007/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 7
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_1315039478/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_1315039478/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_1315039478/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_1315039478/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_1315039478/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1315039478
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_0397525346/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_0397525346/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_0397525346/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_0397525346/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_0397525346/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 397525346
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_2083438954/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_2083438954/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_2083438954/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_2083438954/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_2083438954/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 2083438954
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_0811301288/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_0811301288/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_0811301288/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_0811301288/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_0811301288/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 811301288
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_1513855197/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_1513855197/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_1513855197/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_1513855197/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_1513855197/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1513855197
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_1900183420/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_1900183420/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_1900183420/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_1900183420/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_1900183420/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1900183420
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 123,
+      "result": "outputs/seed_robustness/ar7/train_seed_1667329077/evaluations/eval_seed_0000000123.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 456,
+      "result": "outputs/seed_robustness/ar7/train_seed_1667329077/evaluations/eval_seed_0000000456.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 789,
+      "result": "outputs/seed_robustness/ar7/train_seed_1667329077/evaluations/eval_seed_0000000789.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 2027,
+      "result": "outputs/seed_robustness/ar7/train_seed_1667329077/evaluations/eval_seed_0000002027.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    },
+    {
+      "ar_order": 7,
+      "evaluation_seed": 31415,
+      "result": "outputs/seed_robustness/ar7/train_seed_1667329077/evaluations/eval_seed_0000031415.json",
+      "status": "complete",
+      "train_seed": 1667329077
+    }
+  ],
+  "experiment": "scalar_ar_seed_robustness",
+  "orders": [
+    2,
+    6,
+    7
+  ],
+  "schema_version": 1,
+  "train_seeds": [
+    7,
+    1315039478,
+    397525346,
+    2083438954,
+    811301288,
+    1513855197,
+    1900183420,
+    1667329077
+  ],
+  "training_runs": [
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_0000000007/best_model.pt",
+      "status": "complete",
+      "train_seed": 7,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_0000000007/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_1315039478/best_model.pt",
+      "status": "complete",
+      "train_seed": 1315039478,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_1315039478/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_0397525346/best_model.pt",
+      "status": "complete",
+      "train_seed": 397525346,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_0397525346/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_2083438954/best_model.pt",
+      "status": "complete",
+      "train_seed": 2083438954,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_2083438954/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_0811301288/best_model.pt",
+      "status": "complete",
+      "train_seed": 811301288,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_0811301288/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_1513855197/best_model.pt",
+      "status": "complete",
+      "train_seed": 1513855197,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_1513855197/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_1900183420/best_model.pt",
+      "status": "complete",
+      "train_seed": 1900183420,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_1900183420/training_result.json"
+    },
+    {
+      "ar_order": 2,
+      "checkpoint": "outputs/seed_robustness/ar2/train_seed_1667329077/best_model.pt",
+      "status": "complete",
+      "train_seed": 1667329077,
+      "training_result": "outputs/seed_robustness/ar2/train_seed_1667329077/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_0000000007/best_model.pt",
+      "status": "complete",
+      "train_seed": 7,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_0000000007/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_1315039478/best_model.pt",
+      "status": "complete",
+      "train_seed": 1315039478,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_1315039478/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_0397525346/best_model.pt",
+      "status": "complete",
+      "train_seed": 397525346,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_0397525346/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_2083438954/best_model.pt",
+      "status": "complete",
+      "train_seed": 2083438954,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_2083438954/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_0811301288/best_model.pt",
+      "status": "complete",
+      "train_seed": 811301288,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_0811301288/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_1513855197/best_model.pt",
+      "status": "complete",
+      "train_seed": 1513855197,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_1513855197/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_1900183420/best_model.pt",
+      "status": "complete",
+      "train_seed": 1900183420,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_1900183420/training_result.json"
+    },
+    {
+      "ar_order": 6,
+      "checkpoint": "outputs/seed_robustness/ar6/train_seed_1667329077/best_model.pt",
+      "status": "complete",
+      "train_seed": 1667329077,
+      "training_result": "outputs/seed_robustness/ar6/train_seed_1667329077/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_0000000007/best_model.pt",
+      "status": "complete",
+      "train_seed": 7,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_0000000007/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_1315039478/best_model.pt",
+      "status": "complete",
+      "train_seed": 1315039478,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_1315039478/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_0397525346/best_model.pt",
+      "status": "complete",
+      "train_seed": 397525346,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_0397525346/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_2083438954/best_model.pt",
+      "status": "complete",
+      "train_seed": 2083438954,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_2083438954/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_0811301288/best_model.pt",
+      "status": "complete",
+      "train_seed": 811301288,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_0811301288/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_1513855197/best_model.pt",
+      "status": "complete",
+      "train_seed": 1513855197,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_1513855197/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_1900183420/best_model.pt",
+      "status": "complete",
+      "train_seed": 1900183420,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_1900183420/training_result.json"
+    },
+    {
+      "ar_order": 7,
+      "checkpoint": "outputs/seed_robustness/ar7/train_seed_1667329077/best_model.pt",
+      "status": "complete",
+      "train_seed": 1667329077,
+      "training_result": "outputs/seed_robustness/ar7/train_seed_1667329077/training_result.json"
+    }
+  ],
+  "updated_at_utc": "2026-07-21T18:21:53.446299+00:00"
+}

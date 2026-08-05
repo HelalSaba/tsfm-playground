@@ -1,0 +1,104 @@
+{
+  "canonical_eval_seed": 123,
+  "created_at_utc": "2026-07-21T16:58:29.287298+00:00",
+  "default_eval_seeds": [
+    123,
+    456,
+    789,
+    2027,
+    31415
+  ],
+  "experiment": "scalar_ar_seed_robustness",
+  "invocations": [
+    {
+      "deterministic_algorithms_requested": true,
+      "device": "cuda",
+      "eval_only": false,
+      "eval_seeds": [
+        123,
+        456,
+        789,
+        2027,
+        31415
+      ],
+      "force": false,
+      "orders": [
+        6
+      ],
+      "selection_seed": 1000003,
+      "stage": "pilot",
+      "steps_by_order": {
+        "6": 8000
+      },
+      "timestamp_utc": "2026-07-21T16:58:29.301537+00:00",
+      "torch_num_interop_threads": 1,
+      "torch_num_threads": 4,
+      "train_only": false,
+      "train_seeds": [
+        7,
+        1315039478,
+        397525346,
+        2083438954,
+        811301288
+      ]
+    },
+    {
+      "deterministic_algorithms_requested": true,
+      "device": "cuda",
+      "eval_only": false,
+      "eval_seeds": [
+        123,
+        456,
+        789,
+        2027,
+        31415
+      ],
+      "force": false,
+      "orders": [
+        2,
+        6,
+        7
+      ],
+      "selection_seed": 1000003,
+      "stage": "main",
+      "steps_by_order": {
+        "2": 5000,
+        "6": 8000,
+        "7": 8000
+      },
+      "timestamp_utc": "2026-07-21T17:22:22.236469+00:00",
+      "torch_num_interop_threads": 1,
+      "torch_num_threads": 4,
+      "train_only": false,
+      "train_seeds": [
+        7,
+        1315039478,
+        397525346,
+        2083438954,
+        811301288,
+        1513855197,
+        1900183420,
+        1667329077
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "seed_roles": {
+    "evaluation_seed": "varied; controls held-out coefficients, series and perturbation permutations",
+    "selection_seed": "fixed; controls a common checkpoint-selection batch across training seeds",
+    "training_seed": "varied; controls model initialization and stochastic training stream"
+  },
+  "system": {
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "git_commit": null,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:12:53) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.12.1+cu126"
+  },
+  "updated_at_utc": "2026-07-21T17:22:22.236469+00:00"
+}

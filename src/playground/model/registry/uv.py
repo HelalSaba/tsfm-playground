@@ -50,7 +50,7 @@ class UVModel(nn.Module):
         self.use_arcsinh = use_arcsinh
         self.use_rope = use_rope
 
-        self.instance_norm = InstanceNorm(self.use_arcsinh)
+        self.instance_norm = InstanceNorm(use_arcsinh=self.use_arcsinh)
 
         self.patch_size = patch_size
         self.patch_stride = patch_stride

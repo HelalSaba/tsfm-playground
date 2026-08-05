@@ -1,0 +1,1667 @@
+{
+  "analysis": "evaluation_seed_influence",
+  "source_index": "C:\\Users\\Danie\\Downloads\\private_tsm-main\\outputs\\seed_robustness\\experiment_index.json",
+  "thresholds": {
+    "small_eval_eta2": 0.1,
+    "eval_to_train_eta2_ratio": 0.5,
+    "forecast_relative_eval_range": 0.02,
+    "structural_relative_eval_range": 0.1,
+    "categorical_mode_agreement": 0.8,
+    "attention_profile_correlation": 0.95,
+    "perturbation_profile_correlation": 0.9
+  },
+  "n_permutations": 5000,
+  "orders": [
+    2,
+    6,
+    7
+  ],
+  "evaluation_seeds": [
+    123,
+    456,
+    789,
+    2027,
+    31415
+  ],
+  "variance_summary": [
+    {
+      "AR": 2,
+      "metric": "Median MASE",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.6487283632159233,
+      "train \u03b7\u00b2": 0.46232188061527185,
+      "eval \u03b7\u00b2": 0.4797547726521339,
+      "residual \u03b7\u00b2": 0.05792334673259417,
+      "eval/train": 1.0377072614725953,
+      "relative eval range": 0.02212412152140888,
+      "within SD / total SD": 0.7601158390358566,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 2,
+      "metric": "Mean WQL",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.5486455082893371,
+      "train \u03b7\u00b2": 0.41124324111962085,
+      "eval \u03b7\u00b2": 0.5478332364401649,
+      "residual \u03b7\u00b2": 0.04092352244021423,
+      "eval/train": 1.3321391859199292,
+      "relative eval range": 0.030437184772608893,
+      "within SD / total SD": 0.787233534988702,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 2,
+      "metric": "MSE to conditional mean",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.17951053343713283,
+      "train \u03b7\u00b2": 0.966872375619633,
+      "eval \u03b7\u00b2": 0.023470587739557108,
+      "residual \u03b7\u00b2": 0.00965703664080997,
+      "eval/train": 0.024274752626493926,
+      "relative eval range": 0.07030540538887634,
+      "within SD / total SD": 0.1837471614870608,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 2,
+      "metric": "Final-layer lag-1 attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.14038488864898682,
+      "train \u03b7\u00b2": 0.9996976945257267,
+      "eval \u03b7\u00b2": 0.00010329215351015936,
+      "residual \u03b7\u00b2": 0.0001990133207632744,
+      "eval/train": 0.00010332338873619479,
+      "relative eval range": 0.012172535352246173,
+      "within SD / total SD": 0.015967214598654883,
+      "permutation p": 0.014197160567886422
+    },
+    {
+      "AR": 2,
+      "metric": "Lag-2 / lag-1 attention ratio",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 1.301330379967508,
+      "train \u03b7\u00b2": 0.9990870711178266,
+      "eval \u03b7\u00b2": 0.0003209030152717613,
+      "residual \u03b7\u00b2": 0.000592025866901736,
+      "eval/train": 0.0003211962446003025,
+      "relative eval range": 0.027413207502317138,
+      "within SD / total SD": 0.029310272130225377,
+      "permutation p": 0.010197960407918417
+    },
+    {
+      "AR": 2,
+      "metric": "First-p attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.33465602342039347,
+      "train \u03b7\u00b2": 0.9999758744473811,
+      "eval \u03b7\u00b2": 5.302373566294475e-06,
+      "residual \u03b7\u00b2": 1.8823179052611587e-05,
+      "eval/train": 5.302501492073233e-06,
+      "relative eval range": 0.0034435801177594106,
+      "within SD / total SD": 0.004454393546789466,
+      "permutation p": 0.11757648470305938
+    },
+    {
+      "AR": 2,
+      "metric": "First-p positive perturbation share",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.7024795763194582,
+      "train \u03b7\u00b2": 0.9199156953177474,
+      "eval \u03b7\u00b2": 0.06173525414602597,
+      "residual \u03b7\u00b2": 0.01834905053622668,
+      "eval/train": 0.06710968674656871,
+      "relative eval range": 0.032772335970867365,
+      "within SD / total SD": 0.2935437396780467,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 2,
+      "metric": "Attention\u2013perturbation Spearman",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.5603555718475073,
+      "train \u03b7\u00b2": 0.8040891554443991,
+      "eval \u03b7\u00b2": 0.11926360581351411,
+      "residual \u03b7\u00b2": 0.0766472387420868,
+      "eval/train": 0.14832137084052605,
+      "relative eval range": 0.32757661989336984,
+      "within SD / total SD": 0.4465332330796505,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 6,
+      "metric": "Median MASE",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.5615134015679359,
+      "train \u03b7\u00b2": 0.9470780646202165,
+      "eval \u03b7\u00b2": 0.04503405153790617,
+      "residual \u03b7\u00b2": 0.007887883841877354,
+      "eval/train": 0.04755051692171233,
+      "relative eval range": 0.03541303155455885,
+      "within SD / total SD": 0.2501166745237468,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 6,
+      "metric": "Mean WQL",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.434728916734457,
+      "train \u03b7\u00b2": 0.968448774200107,
+      "eval \u03b7\u00b2": 0.02537981275391775,
+      "residual \u03b7\u00b2": 0.0061714130459753136,
+      "eval/train": 0.026206665163968305,
+      "relative eval range": 0.030486229446765205,
+      "within SD / total SD": 0.19971270729888158,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 6,
+      "metric": "MSE to conditional mean",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 2.565726935863495,
+      "train \u03b7\u00b2": 0.9796651000953434,
+      "eval \u03b7\u00b2": 0.011357939915068171,
+      "residual \u03b7\u00b2": 0.008976959989588482,
+      "eval/train": 0.011593696574434252,
+      "relative eval range": 0.06136792118061351,
+      "within SD / total SD": 0.14678778866029452,
+      "permutation p": 0.0007998400319936012
+    },
+    {
+      "AR": 6,
+      "metric": "Final-layer lag-1 attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.134455712325871,
+      "train \u03b7\u00b2": 0.9999560643269336,
+      "eval \u03b7\u00b2": 1.586590569023146e-05,
+      "residual \u03b7\u00b2": 2.8069767376089395e-05,
+      "eval/train": 1.5866602800104757e-05,
+      "relative eval range": 0.011041733255364245,
+      "within SD / total SD": 0.00452506991384369,
+      "permutation p": 0.00599880023995201
+    },
+    {
+      "AR": 6,
+      "metric": "Lag-2 / lag-1 attention ratio",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 4.2973372753058765,
+      "train \u03b7\u00b2": 0.999329539500734,
+      "eval \u03b7\u00b2": 0.00010147345706690855,
+      "residual \u03b7\u00b2": 0.0005689870421991734,
+      "eval/train": 0.00010154153665627135,
+      "relative eval range": 0.03431451888614057,
+      "within SD / total SD": 0.007436878166741178,
+      "permutation p": 0.2585482903419316
+    },
+    {
+      "AR": 6,
+      "metric": "First-p attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.562855516676791,
+      "train \u03b7\u00b2": 0.9998870694655634,
+      "eval \u03b7\u00b2": 2.922342931856638e-05,
+      "residual \u03b7\u00b2": 8.370710511797555e-05,
+      "eval/train": 2.9226729908794814e-05,
+      "relative eval range": 0.0024549470434476854,
+      "within SD / total SD": 0.008774167421380803,
+      "permutation p": 0.06458708258348331
+    },
+    {
+      "AR": 6,
+      "metric": "First-p positive perturbation share",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.785634763869975,
+      "train \u03b7\u00b2": 0.8120337027788409,
+      "eval \u03b7\u00b2": 0.1299593793191628,
+      "residual \u03b7\u00b2": 0.05800691790199635,
+      "eval/train": 0.16004185401964469,
+      "relative eval range": 0.030806365260318855,
+      "within SD / total SD": 0.48391566875246284,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 6,
+      "metric": "Attention\u2013perturbation Spearman",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.892558651026393,
+      "train \u03b7\u00b2": 0.9220048077108044,
+      "eval \u03b7\u00b2": 0.0026486609514622494,
+      "residual \u03b7\u00b2": 0.07534653133773345,
+      "eval/train": 0.002872719241061731,
+      "relative eval range": 0.01232083453119211,
+      "within SD / total SD": 0.22308826262097084,
+      "permutation p": 0.9184163167366527
+    },
+    {
+      "AR": 7,
+      "metric": "Median MASE",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.5623672664165497,
+      "train \u03b7\u00b2": 0.9123317968134576,
+      "eval \u03b7\u00b2": 0.07484768151402572,
+      "residual \u03b7\u00b2": 0.012820521672516724,
+      "eval/train": 0.08203997906841524,
+      "relative eval range": 0.03549532567561966,
+      "within SD / total SD": 0.3162227777577703,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 7,
+      "metric": "Mean WQL",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.4278360575437546,
+      "train \u03b7\u00b2": 0.9572283621644445,
+      "eval \u03b7\u00b2": 0.029999619437630968,
+      "residual \u03b7\u00b2": 0.012772018397924433,
+      "eval/train": 0.03134008625673929,
+      "relative eval range": 0.02499156107394923,
+      "within SD / total SD": 0.23327980777396143,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 7,
+      "metric": "MSE to conditional mean",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 3.640610879659653,
+      "train \u03b7\u00b2": 0.9633435897950674,
+      "eval \u03b7\u00b2": 0.023167810112342802,
+      "residual \u03b7\u00b2": 0.013488600092589816,
+      "eval/train": 0.024049373824422605,
+      "relative eval range": 0.06294748874811794,
+      "within SD / total SD": 0.17934434972652233,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 7,
+      "metric": "Final-layer lag-1 attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.12283623237162829,
+      "train \u03b7\u00b2": 0.9999849484873438,
+      "eval \u03b7\u00b2": 2.0273461354927002e-06,
+      "residual \u03b7\u00b2": 1.3024166520786622e-05,
+      "eval/train": 2.0273766505780153e-06,
+      "relative eval range": 0.0029870600980980845,
+      "within SD / total SD": 0.003395765488596813,
+      "permutation p": 0.38712257548490303
+    },
+    {
+      "AR": 7,
+      "metric": "Lag-2 / lag-1 attention ratio",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 4.28165791791533,
+      "train \u03b7\u00b2": 0.9996470611238458,
+      "eval \u03b7\u00b2": 2.894103538358216e-05,
+      "residual \u03b7\u00b2": 0.00032399784077052343,
+      "eval/train": 2.8951253406422678e-05,
+      "relative eval range": 0.01740566367020686,
+      "within SD / total SD": 0.002883124392453707,
+      "permutation p": 0.7190561887622475
+    },
+    {
+      "AR": 7,
+      "metric": "First-p attention mass",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.5611788336187601,
+      "train \u03b7\u00b2": 0.9997856389816099,
+      "eval \u03b7\u00b2": 2.7534819834670696e-05,
+      "residual \u03b7\u00b2": 0.00018682619855539783,
+      "eval/train": 2.7540723492205687e-05,
+      "relative eval range": 0.0021218654355791592,
+      "within SD / total SD": 0.010762183734272844,
+      "permutation p": 0.4263147370525895
+    },
+    {
+      "AR": 7,
+      "metric": "First-p positive perturbation share",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.7913701972235996,
+      "train \u03b7\u00b2": 0.9151088409221065,
+      "eval \u03b7\u00b2": 0.06353939540107745,
+      "residual \u03b7\u00b2": 0.02135176367681608,
+      "eval/train": 0.06943370292112158,
+      "relative eval range": 0.03011607607283063,
+      "within SD / total SD": 0.3109155139670277,
+      "permutation p": 0.0001999600079984003
+    },
+    {
+      "AR": 7,
+      "metric": "Attention\u2013perturbation Spearman",
+      "n train": 8,
+      "n eval": 5,
+      "mean": 0.8441074046920821,
+      "train \u03b7\u00b2": 0.9129565971724819,
+      "eval \u03b7\u00b2": 0.02130135751474931,
+      "residual \u03b7\u00b2": 0.06574204531276873,
+      "eval/train": 0.023332278424540387,
+      "relative eval range": 0.04266684037390482,
+      "within SD / total SD": 0.24706463623145727,
+      "permutation p": 0.07518496300739852
+    }
+  ],
+  "categorical_stability": [
+    {
+      "AR": 2,
+      "training seed": 7,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 7,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 2,
+      "training seed": 7,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 7,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 2,
+      "training seed": 7,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 attention rank",
+      "mode": 4,
+      "mode agreement": 1.0,
+      "unique values": "4"
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "2, 3"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 attention rank",
+      "mode": 9,
+      "mode agreement": 0.8,
+      "unique values": "10, 9"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "quantity": "Strict AR(6) pattern",
+      "mode": true,
+      "mode agreement": 0.8,
+      "unique values": "False, True"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 attention rank",
+      "mode": 19,
+      "mode agreement": 1.0,
+      "unique values": "19"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 attention rank",
+      "mode": 7,
+      "mode agreement": 1.0,
+      "unique values": "7"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 4,
+      "mode agreement": 1.0,
+      "unique values": "4"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "quantity": "Strict AR(6) pattern",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "quantity": "Lag-1 attention rank",
+      "mode": 12,
+      "mode agreement": 0.6,
+      "unique values": "12, 13"
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "quantity": "Top attention lag",
+      "mode": 4,
+      "mode agreement": 1.0,
+      "unique values": "4"
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "quantity": "Lag-1 attention rank",
+      "mode": 6,
+      "mode agreement": 1.0,
+      "unique values": "6"
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "quantity": "Lag-1 attention rank",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 attention rank",
+      "mode": 12,
+      "mode agreement": 1.0,
+      "unique values": "12"
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "quantity": "Top attention lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "quantity": "Top perturbation lag",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 attention rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 2,
+      "mode agreement": 0.8,
+      "unique values": "1, 2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "quantity": "Lag 1 underrepresented",
+      "mode": false,
+      "mode agreement": 1.0,
+      "unique values": "False"
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "quantity": "Top attention lag",
+      "mode": 2,
+      "mode agreement": 1.0,
+      "unique values": "2"
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 attention rank",
+      "mode": 11,
+      "mode agreement": 1.0,
+      "unique values": "11"
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "quantity": "Top attention lag",
+      "mode": 4,
+      "mode agreement": 1.0,
+      "unique values": "4"
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "quantity": "Top perturbation lag",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 attention rank",
+      "mode": 12,
+      "mode agreement": 0.6,
+      "unique values": "11, 12"
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "quantity": "Lag-1 perturbation rank",
+      "mode": 1,
+      "mode agreement": 1.0,
+      "unique values": "1"
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "quantity": "Lag 1 underrepresented",
+      "mode": true,
+      "mode agreement": 1.0,
+      "unique values": "True"
+    }
+  ],
+  "profile_stability": [
+    {
+      "AR": 2,
+      "training seed": 7,
+      "evaluation profiles": 5,
+      "attention median r": 0.9995795990250267,
+      "attention min r": 0.999066280083201,
+      "attention mean L1": 0.015359722822904587,
+      "perturbation median \u03c1": 0.7085777126099706,
+      "perturbation min \u03c1": 0.5370234604105572
+    },
+    {
+      "AR": 2,
+      "training seed": 397525346,
+      "evaluation profiles": 5,
+      "attention median r": 0.9996669986456529,
+      "attention min r": 0.9996109665743589,
+      "attention mean L1": 0.015070369094610214,
+      "perturbation median \u03c1": 0.7905058651026392,
+      "perturbation min \u03c1": 0.6994134897360703
+    },
+    {
+      "AR": 2,
+      "training seed": 811301288,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999697129387599,
+      "attention min r": 0.9999415950220314,
+      "attention mean L1": 0.012967283464968204,
+      "perturbation median \u03c1": 0.46847507331378296,
+      "perturbation min \u03c1": 0.34274193548387094
+    },
+    {
+      "AR": 2,
+      "training seed": 1315039478,
+      "evaluation profiles": 5,
+      "attention median r": 0.999981421215538,
+      "attention min r": 0.9999739214024504,
+      "attention mean L1": 0.009089726582169532,
+      "perturbation median \u03c1": 0.6697214076246334,
+      "perturbation min \u03c1": 0.5791788856304985
+    },
+    {
+      "AR": 2,
+      "training seed": 1513855197,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999562839732616,
+      "attention min r": 0.9999156661783279,
+      "attention mean L1": 0.012315173633396626,
+      "perturbation median \u03c1": 0.4937683284457477,
+      "perturbation min \u03c1": 0.219574780058651
+    },
+    {
+      "AR": 2,
+      "training seed": 1667329077,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999264778236863,
+      "attention min r": 0.9998288697729555,
+      "attention mean L1": 0.015997254103422166,
+      "perturbation median \u03c1": 0.6028225806451613,
+      "perturbation min \u03c1": 0.5014662756598239
+    },
+    {
+      "AR": 2,
+      "training seed": 1900183420,
+      "evaluation profiles": 5,
+      "attention median r": 0.9960885957949923,
+      "attention min r": 0.9946950184763969,
+      "attention mean L1": 0.016846980154514312,
+      "perturbation median \u03c1": 0.8324780058651026,
+      "perturbation min \u03c1": 0.7426686217008798
+    },
+    {
+      "AR": 2,
+      "training seed": 2083438954,
+      "evaluation profiles": 5,
+      "attention median r": 0.9960316524885682,
+      "attention min r": 0.9950187860221535,
+      "attention mean L1": 0.013485171273350716,
+      "perturbation median \u03c1": 0.6973973607038122,
+      "perturbation min \u03c1": 0.5113636363636364
+    },
+    {
+      "AR": 6,
+      "training seed": 7,
+      "evaluation profiles": 5,
+      "attention median r": 0.999925287928558,
+      "attention min r": 0.9998727897320285,
+      "attention mean L1": 0.014258225075900554,
+      "perturbation median \u03c1": 0.9580278592375365,
+      "perturbation min \u03c1": 0.9329178885630497
+    },
+    {
+      "AR": 6,
+      "training seed": 397525346,
+      "evaluation profiles": 5,
+      "attention median r": 0.9998862957854677,
+      "attention min r": 0.9997266558814009,
+      "attention mean L1": 0.013190490566194058,
+      "perturbation median \u03c1": 0.940432551319648,
+      "perturbation min \u03c1": 0.9219208211143693
+    },
+    {
+      "AR": 6,
+      "training seed": 811301288,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999874327153951,
+      "attention min r": 0.9999620495508589,
+      "attention mean L1": 0.008285053819417954,
+      "perturbation median \u03c1": 0.9532624633431085,
+      "perturbation min \u03c1": 0.9193548387096774
+    },
+    {
+      "AR": 6,
+      "training seed": 1315039478,
+      "evaluation profiles": 5,
+      "attention median r": 0.9998989648221392,
+      "attention min r": 0.9997575946387616,
+      "attention mean L1": 0.012945255637168885,
+      "perturbation median \u03c1": 0.8909457478005864,
+      "perturbation min \u03c1": 0.846041055718475
+    },
+    {
+      "AR": 6,
+      "training seed": 1513855197,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999209715120954,
+      "attention min r": 0.9998237284426025,
+      "attention mean L1": 0.013850671704858541,
+      "perturbation median \u03c1": 0.9019428152492668,
+      "perturbation min \u03c1": 0.8614369501466275
+    },
+    {
+      "AR": 6,
+      "training seed": 1667329077,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999038897547763,
+      "attention min r": 0.9998404633538718,
+      "attention mean L1": 0.0159334690310061,
+      "perturbation median \u03c1": 0.8845307917888562,
+      "perturbation min \u03c1": 0.8207478005865102
+    },
+    {
+      "AR": 6,
+      "training seed": 1900183420,
+      "evaluation profiles": 5,
+      "attention median r": 0.9997679379802947,
+      "attention min r": 0.9993618607642306,
+      "attention mean L1": 0.015173461567610503,
+      "perturbation median \u03c1": 0.9364002932551319,
+      "perturbation min \u03c1": 0.9087243401759529
+    },
+    {
+      "AR": 6,
+      "training seed": 2083438954,
+      "evaluation profiles": 5,
+      "attention median r": 0.9998347782517121,
+      "attention min r": 0.999613904314785,
+      "attention mean L1": 0.014569505443796515,
+      "perturbation median \u03c1": 0.9626099706744867,
+      "perturbation min \u03c1": 0.9420821114369501
+    },
+    {
+      "AR": 7,
+      "training seed": 7,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999401382535769,
+      "attention min r": 0.9999154306557441,
+      "attention mean L1": 0.010933155100792647,
+      "perturbation median \u03c1": 0.9591275659824046,
+      "perturbation min \u03c1": 0.9318181818181818
+    },
+    {
+      "AR": 7,
+      "training seed": 397525346,
+      "evaluation profiles": 5,
+      "attention median r": 0.9997495435280681,
+      "attention min r": 0.9992661762890603,
+      "attention mean L1": 0.016043020924553276,
+      "perturbation median \u03c1": 0.973423753665689,
+      "perturbation min \u03c1": 0.9567448680351905
+    },
+    {
+      "AR": 7,
+      "training seed": 811301288,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999826333962307,
+      "attention min r": 0.9999668408943503,
+      "attention mean L1": 0.008645869488827885,
+      "perturbation median \u03c1": 0.9046920821114369,
+      "perturbation min \u03c1": 0.8596041055718473
+    },
+    {
+      "AR": 7,
+      "training seed": 1315039478,
+      "evaluation profiles": 5,
+      "attention median r": 0.9999439269334267,
+      "attention min r": 0.9999073384315724,
+      "attention mean L1": 0.010441532637923957,
+      "perturbation median \u03c1": 0.9151392961876832,
+      "perturbation min \u03c1": 0.8376099706744866
+    },
+    {
+      "AR": 7,
+      "training seed": 1513855197,
+      "evaluation profiles": 5,
+      "attention median r": 0.999948435509504,
+      "attention min r": 0.99991810225243,
+      "attention mean L1": 0.011825179401785135,
+      "perturbation median \u03c1": 0.9677419354838709,
+      "perturbation min \u03c1": 0.9373167155425218
+    },
+    {
+      "AR": 7,
+      "training seed": 1667329077,
+      "evaluation profiles": 5,
+      "attention median r": 0.999958443107263,
+      "attention min r": 0.9999423901159036,
+      "attention mean L1": 0.010310282185673713,
+      "perturbation median \u03c1": 0.9144061583577712,
+      "perturbation min \u03c1": 0.8848973607038124
+    },
+    {
+      "AR": 7,
+      "training seed": 1900183420,
+      "evaluation profiles": 5,
+      "attention median r": 0.9998775895593561,
+      "attention min r": 0.9998072758682034,
+      "attention mean L1": 0.014394382014870644,
+      "perturbation median \u03c1": 0.94391495601173,
+      "perturbation min \u03c1": 0.9277859237536655
+    },
+    {
+      "AR": 7,
+      "training seed": 2083438954,
+      "evaluation profiles": 5,
+      "attention median r": 0.9995190993371845,
+      "attention min r": 0.9989715280412874,
+      "attention mean L1": 0.018212435860186817,
+      "perturbation median \u03c1": 0.9261363636363634,
+      "perturbation min \u03c1": 0.8823313782991202
+    }
+  ],
+  "verdicts": [
+    {
+      "AR": 2,
+      "continuous stable rate": 0.5,
+      "categorical stable rate": 1.0,
+      "attention-profile stable rate": 1.0,
+      "perturbation-profile stable rate": 0.0,
+      "overall evidence rate": 0.625,
+      "verdict": "Evaluation seed materially influences at least part of the conclusion",
+      "continuous exceptions": "Median MASE: eval \u03b7\u00b2=0.480, eval/train=1.038, relative range=0.022 | Mean WQL: eval \u03b7\u00b2=0.548, eval/train=1.332, relative range=0.030 | MSE to conditional mean: eval \u03b7\u00b2=0.023, eval/train=0.024, relative range=0.070 | Attention\u2013perturbation Spearman: eval \u03b7\u00b2=0.119, eval/train=0.148, relative range=0.328",
+      "qualitative exceptions": "none"
+    },
+    {
+      "AR": 6,
+      "continuous stable rate": 0.625,
+      "categorical stable rate": 1.0,
+      "attention-profile stable rate": 1.0,
+      "perturbation-profile stable rate": 0.75,
+      "overall evidence rate": 0.84375,
+      "verdict": "Evaluation seed has a limited but non-negligible effect",
+      "continuous exceptions": "Median MASE: eval \u03b7\u00b2=0.045, eval/train=0.048, relative range=0.035 | Mean WQL: eval \u03b7\u00b2=0.025, eval/train=0.026, relative range=0.030 | MSE to conditional mean: eval \u03b7\u00b2=0.011, eval/train=0.012, relative range=0.061",
+      "qualitative exceptions": "none"
+    },
+    {
+      "AR": 7,
+      "continuous stable rate": 0.625,
+      "categorical stable rate": 0.9375,
+      "attention-profile stable rate": 1.0,
+      "perturbation-profile stable rate": 1.0,
+      "overall evidence rate": 0.890625,
+      "verdict": "Evaluation seed materially influences at least part of the conclusion",
+      "continuous exceptions": "Median MASE: eval \u03b7\u00b2=0.075, eval/train=0.082, relative range=0.035 | Mean WQL: eval \u03b7\u00b2=0.030, eval/train=0.031, relative range=0.025 | MSE to conditional mean: eval \u03b7\u00b2=0.023, eval/train=0.024, relative range=0.063",
+      "qualitative exceptions": "train 7 / Lag-1 attention rank: agreement=0.60, values=12, 13 | train 2083438954 / Lag-1 attention rank: agreement=0.60, values=11, 12"
+    }
+  ]
+}

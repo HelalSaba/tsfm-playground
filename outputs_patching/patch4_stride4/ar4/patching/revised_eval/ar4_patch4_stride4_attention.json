@@ -1,0 +1,740 @@
+{
+  "attention_lag_distributed_rows": [
+    {
+      "distributed_context_normalized_attention": 0.12774145603179932,
+      "distributed_raw_attention": 0.13089798390865326,
+      "is_within_ar_order": 1,
+      "lag": 1,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.12774145603179932,
+      "distributed_raw_attention": 0.13089798390865326,
+      "is_within_ar_order": 1,
+      "lag": 2,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.12774145603179932,
+      "distributed_raw_attention": 0.13089798390865326,
+      "is_within_ar_order": 1,
+      "lag": 3,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.12774145603179932,
+      "distributed_raw_attention": 0.13089798390865326,
+      "is_within_ar_order": 1,
+      "lag": 4,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.07011226564645767,
+      "distributed_raw_attention": 0.06986653059720993,
+      "is_within_ar_order": 0,
+      "lag": 5,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.07011226564645767,
+      "distributed_raw_attention": 0.06986653059720993,
+      "is_within_ar_order": 0,
+      "lag": 6,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.07011226564645767,
+      "distributed_raw_attention": 0.06986653059720993,
+      "is_within_ar_order": 0,
+      "lag": 7,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.07011226564645767,
+      "distributed_raw_attention": 0.06986653059720993,
+      "is_within_ar_order": 0,
+      "lag": 8,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.022748775780200958,
+      "distributed_raw_attention": 0.0220643337816,
+      "is_within_ar_order": 0,
+      "lag": 9,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.022748775780200958,
+      "distributed_raw_attention": 0.0220643337816,
+      "is_within_ar_order": 0,
+      "lag": 10,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.022748775780200958,
+      "distributed_raw_attention": 0.0220643337816,
+      "is_within_ar_order": 0,
+      "lag": 11,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.022748775780200958,
+      "distributed_raw_attention": 0.0220643337816,
+      "is_within_ar_order": 0,
+      "lag": 12,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0065574622713029385,
+      "distributed_raw_attention": 0.005989538971334696,
+      "is_within_ar_order": 0,
+      "lag": 13,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0065574622713029385,
+      "distributed_raw_attention": 0.005989538971334696,
+      "is_within_ar_order": 0,
+      "lag": 14,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0065574622713029385,
+      "distributed_raw_attention": 0.005989538971334696,
+      "is_within_ar_order": 0,
+      "lag": 15,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0065574622713029385,
+      "distributed_raw_attention": 0.005989538971334696,
+      "is_within_ar_order": 0,
+      "lag": 16,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.003912642132490873,
+      "distributed_raw_attention": 0.003422960638999939,
+      "is_within_ar_order": 0,
+      "lag": 17,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.003912642132490873,
+      "distributed_raw_attention": 0.003422960638999939,
+      "is_within_ar_order": 0,
+      "lag": 18,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.003912642132490873,
+      "distributed_raw_attention": 0.003422960638999939,
+      "is_within_ar_order": 0,
+      "lag": 19,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.003912642132490873,
+      "distributed_raw_attention": 0.003422960638999939,
+      "is_within_ar_order": 0,
+      "lag": 20,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.004515201784670353,
+      "distributed_raw_attention": 0.003986799623817205,
+      "is_within_ar_order": 0,
+      "lag": 21,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.004515201784670353,
+      "distributed_raw_attention": 0.003986799623817205,
+      "is_within_ar_order": 0,
+      "lag": 22,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.004515201784670353,
+      "distributed_raw_attention": 0.003986799623817205,
+      "is_within_ar_order": 0,
+      "lag": 23,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.004515201784670353,
+      "distributed_raw_attention": 0.003986799623817205,
+      "is_within_ar_order": 0,
+      "lag": 24,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.006681596394628286,
+      "distributed_raw_attention": 0.006219224538654089,
+      "is_within_ar_order": 0,
+      "lag": 25,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.006681596394628286,
+      "distributed_raw_attention": 0.006219224538654089,
+      "is_within_ar_order": 0,
+      "lag": 26,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.006681596394628286,
+      "distributed_raw_attention": 0.006219224538654089,
+      "is_within_ar_order": 0,
+      "lag": 27,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.006681596394628286,
+      "distributed_raw_attention": 0.006219224538654089,
+      "is_within_ar_order": 0,
+      "lag": 28,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.007730616256594658,
+      "distributed_raw_attention": 0.0075526186265051365,
+      "is_within_ar_order": 0,
+      "lag": 29,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.007730616256594658,
+      "distributed_raw_attention": 0.0075526186265051365,
+      "is_within_ar_order": 0,
+      "lag": 30,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.007730616256594658,
+      "distributed_raw_attention": 0.0075526186265051365,
+      "is_within_ar_order": 0,
+      "lag": 31,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.007730616256594658,
+      "distributed_raw_attention": 0.0075526186265051365,
+      "is_within_ar_order": 0,
+      "lag": 32,
+      "layer": 0,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.057565778493881226,
+      "distributed_raw_attention": 0.058895427733659744,
+      "is_within_ar_order": 1,
+      "lag": 1,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.057565778493881226,
+      "distributed_raw_attention": 0.058895427733659744,
+      "is_within_ar_order": 1,
+      "lag": 2,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.057565778493881226,
+      "distributed_raw_attention": 0.058895427733659744,
+      "is_within_ar_order": 1,
+      "lag": 3,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.057565778493881226,
+      "distributed_raw_attention": 0.058895427733659744,
+      "is_within_ar_order": 1,
+      "lag": 4,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03640545904636383,
+      "distributed_raw_attention": 0.036529384553432465,
+      "is_within_ar_order": 0,
+      "lag": 5,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03640545904636383,
+      "distributed_raw_attention": 0.036529384553432465,
+      "is_within_ar_order": 0,
+      "lag": 6,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03640545904636383,
+      "distributed_raw_attention": 0.036529384553432465,
+      "is_within_ar_order": 0,
+      "lag": 7,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03640545904636383,
+      "distributed_raw_attention": 0.036529384553432465,
+      "is_within_ar_order": 0,
+      "lag": 8,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03242376074194908,
+      "distributed_raw_attention": 0.03223424777388573,
+      "is_within_ar_order": 0,
+      "lag": 9,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03242376074194908,
+      "distributed_raw_attention": 0.03223424777388573,
+      "is_within_ar_order": 0,
+      "lag": 10,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03242376074194908,
+      "distributed_raw_attention": 0.03223424777388573,
+      "is_within_ar_order": 0,
+      "lag": 11,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.03242376074194908,
+      "distributed_raw_attention": 0.03223424777388573,
+      "is_within_ar_order": 0,
+      "lag": 12,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.029370484873652458,
+      "distributed_raw_attention": 0.029179809615015984,
+      "is_within_ar_order": 0,
+      "lag": 13,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.029370484873652458,
+      "distributed_raw_attention": 0.029179809615015984,
+      "is_within_ar_order": 0,
+      "lag": 14,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.029370484873652458,
+      "distributed_raw_attention": 0.029179809615015984,
+      "is_within_ar_order": 0,
+      "lag": 15,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.029370484873652458,
+      "distributed_raw_attention": 0.029179809615015984,
+      "is_within_ar_order": 0,
+      "lag": 16,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.027062589302659035,
+      "distributed_raw_attention": 0.026769593358039856,
+      "is_within_ar_order": 0,
+      "lag": 17,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.027062589302659035,
+      "distributed_raw_attention": 0.026769593358039856,
+      "is_within_ar_order": 0,
+      "lag": 18,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.027062589302659035,
+      "distributed_raw_attention": 0.026769593358039856,
+      "is_within_ar_order": 0,
+      "lag": 19,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.027062589302659035,
+      "distributed_raw_attention": 0.026769593358039856,
+      "is_within_ar_order": 0,
+      "lag": 20,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.024894632399082184,
+      "distributed_raw_attention": 0.024585973471403122,
+      "is_within_ar_order": 0,
+      "lag": 21,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.024894632399082184,
+      "distributed_raw_attention": 0.024585973471403122,
+      "is_within_ar_order": 0,
+      "lag": 22,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.024894632399082184,
+      "distributed_raw_attention": 0.024585973471403122,
+      "is_within_ar_order": 0,
+      "lag": 23,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.024894632399082184,
+      "distributed_raw_attention": 0.024585973471403122,
+      "is_within_ar_order": 0,
+      "lag": 24,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0228786151856184,
+      "distributed_raw_attention": 0.022722382098436356,
+      "is_within_ar_order": 0,
+      "lag": 25,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0228786151856184,
+      "distributed_raw_attention": 0.022722382098436356,
+      "is_within_ar_order": 0,
+      "lag": 26,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0228786151856184,
+      "distributed_raw_attention": 0.022722382098436356,
+      "is_within_ar_order": 0,
+      "lag": 27,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.0228786151856184,
+      "distributed_raw_attention": 0.022722382098436356,
+      "is_within_ar_order": 0,
+      "lag": 28,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.01939867064356804,
+      "distributed_raw_attention": 0.01908320002257824,
+      "is_within_ar_order": 0,
+      "lag": 29,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.01939867064356804,
+      "distributed_raw_attention": 0.01908320002257824,
+      "is_within_ar_order": 0,
+      "lag": 30,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.01939867064356804,
+      "distributed_raw_attention": 0.01908320002257824,
+      "is_within_ar_order": 0,
+      "lag": 31,
+      "layer": 1,
+      "test_ar_order": 4
+    },
+    {
+      "distributed_context_normalized_attention": 0.01939867064356804,
+      "distributed_raw_attention": 0.01908320002257824,
+      "is_within_ar_order": 0,
+      "lag": 32,
+      "layer": 1,
+      "test_ar_order": 4
+    }
+  ],
+  "attention_patch_rows": [
+    {
+      "context_normalized_attention": 0.030922461301088333,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 1,
+      "patch_label": "lags 29-32",
+      "patch_max_lag": 32,
+      "patch_min_lag": 29,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.027230743318796158,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.026726381853222847,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 2,
+      "patch_label": "lags 25-28",
+      "patch_max_lag": 28,
+      "patch_min_lag": 25,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.02242323011159897,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.018060805276036263,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 3,
+      "patch_label": "lags 21-24",
+      "patch_max_lag": 24,
+      "patch_min_lag": 21,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.01437428779900074,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.015650566667318344,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 4,
+      "patch_label": "lags 17-20",
+      "patch_max_lag": 20,
+      "patch_min_lag": 17,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.012341382913291454,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.026229845359921455,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 5,
+      "patch_label": "lags 13-16",
+      "patch_max_lag": 16,
+      "patch_min_lag": 13,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.021595105528831482,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.09099509567022324,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 6,
+      "patch_label": "lags 9-12",
+      "patch_max_lag": 12,
+      "patch_min_lag": 9,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.0795523002743721,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.2804490327835083,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 7,
+      "patch_label": "lags 5-8",
+      "patch_max_lag": 8,
+      "patch_min_lag": 5,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.2519017159938812,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.5109657645225525,
+      "layer": 0,
+      "patch_index_oldest_to_newest": 8,
+      "patch_label": "lags 1-4",
+      "patch_max_lag": 4,
+      "patch_min_lag": 1,
+      "patch_overlaps_ar_order": 1,
+      "raw_attention": 0.4719488322734833,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.07759468257427216,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 1,
+      "patch_label": "lags 29-32",
+      "patch_max_lag": 32,
+      "patch_min_lag": 29,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.06643562763929367,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.0915144607424736,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 2,
+      "patch_label": "lags 25-28",
+      "patch_max_lag": 28,
+      "patch_min_lag": 25,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.0791049525141716,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.09957852959632874,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 3,
+      "patch_label": "lags 21-24",
+      "patch_max_lag": 24,
+      "patch_min_lag": 21,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.08559279888868332,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.10825035721063614,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 4,
+      "patch_label": "lags 17-20",
+      "patch_max_lag": 20,
+      "patch_min_lag": 17,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.09319478273391724,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.11748193949460983,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 5,
+      "patch_label": "lags 13-16",
+      "patch_max_lag": 16,
+      "patch_min_lag": 13,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.10158562660217285,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.12969504296779633,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 6,
+      "patch_label": "lags 9-12",
+      "patch_max_lag": 12,
+      "patch_min_lag": 9,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.11221924424171448,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.14562183618545532,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 7,
+      "patch_label": "lags 5-8",
+      "patch_max_lag": 8,
+      "patch_min_lag": 5,
+      "patch_overlaps_ar_order": 0,
+      "raw_attention": 0.12717220187187195,
+      "test_ar_order": 4
+    },
+    {
+      "context_normalized_attention": 0.2302631139755249,
+      "layer": 1,
+      "patch_index_oldest_to_newest": 8,
+      "patch_label": "lags 1-4",
+      "patch_max_lag": 4,
+      "patch_min_lag": 1,
+      "patch_overlaps_ar_order": 1,
+      "raw_attention": 0.20503661036491394,
+      "test_ar_order": 4
+    }
+  ],
+  "checkpoint": "outputs_patching\\patch4_stride4\\ar4\\patching\\sanity\\ar4_patch4_stride4_rope_seed7_best_model.pt",
+  "context_length": 32,
+  "device": "cpu",
+  "eval_n": 4000,
+  "patch_size": 4,
+  "patch_stride": 4,
+  "summary": {
+    "attention_base_mse_to_conditional_mean": 0.6157713532447815,
+    "last_layer_first_p_distributed_attention_mass": 0.2302631139755249,
+    "last_layer_lag1_rank_by_distributed_attention": 1,
+    "last_layer_top_lag_by_distributed_attention": 1,
+    "last_layer_top_p_recall_by_distributed_attention": 1.0,
+    "last_layer_top_patch_label": "lags 1-4",
+    "last_layer_top_patch_max_lag": 4,
+    "last_layer_top_patch_min_lag": 1,
+    "per_layer_summary": [
+      {
+        "first_p_distributed_attention_mass": 0.5109658241271973,
+        "lag1_rank_by_distributed_attention": 1,
+        "layer": 0,
+        "mean_context_attention_mass": 0.9013675451278687,
+        "mean_horizon_self_attention_mass": 0.09863244742155075,
+        "top_lag_by_distributed_attention": 1,
+        "top_p_recall_by_distributed_attention": 1.0,
+        "top_patch_index_oldest_to_newest": 8,
+        "top_patch_label": "lags 1-4",
+        "top_patch_max_lag": 4,
+        "top_patch_min_lag": 1
+      },
+      {
+        "first_p_distributed_attention_mass": 0.2302631139755249,
+        "lag1_rank_by_distributed_attention": 1,
+        "layer": 1,
+        "mean_context_attention_mass": 0.8703418374061584,
+        "mean_horizon_self_attention_mass": 0.12965817749500275,
+        "top_lag_by_distributed_attention": 1,
+        "top_p_recall_by_distributed_attention": 1.0,
+        "top_patch_index_oldest_to_newest": 8,
+        "top_patch_label": "lags 1-4",
+        "top_patch_max_lag": 4,
+        "top_patch_min_lag": 1
+      }
+    ],
+    "test_ar_order": 4
+  },
+  "test_ar_order": 4
+}

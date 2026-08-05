@@ -1,0 +1,493 @@
+{
+  "ar_order": 6,
+  "base_median_mse_to_conditional_mean": 2.7649898529052734,
+  "checkpoint": "/Users/personal/Github/DL-Lab/private_tsm/outputs/context_shift_suite_seed7/trainshift0/ar6/sanity/ar6_scalar_rope_seed7_best_model.pt",
+  "context_length": 32,
+  "device": "mps",
+  "eval_n": 4000,
+  "last_layer_first_p_attention_mass": 0.6133577823638916,
+  "last_layer_lag1_rank": 4,
+  "last_layer_top_lag": 2,
+  "last_layer_top_p_recall": 1.0,
+  "pacf_high": 0.9,
+  "pacf_low": -0.9,
+  "patch_size": 1,
+  "patch_stride": 1,
+  "per_layer_summary": [
+    {
+      "first_p_context_normalized_attention_mass": 0.4999428987503052,
+      "lag1_context_normalized_attention": 0.2499922513961792,
+      "lag1_rank": 1,
+      "layer": 0,
+      "mean_context_attention_mass": 0.9999734163284302,
+      "mean_horizon_self_attention_mass": 2.666150794539135e-05,
+      "top_lag_by_context_normalized_attention": 1,
+      "top_p_recall_by_context_normalized_attention": 0.3333333333333333
+    },
+    {
+      "first_p_context_normalized_attention_mass": 0.6133577823638916,
+      "lag1_context_normalized_attention": 0.0867985337972641,
+      "lag1_rank": 4,
+      "layer": 1,
+      "mean_context_attention_mass": 0.9682291746139526,
+      "mean_horizon_self_attention_mass": 0.03177080303430557,
+      "top_lag_by_context_normalized_attention": 2,
+      "top_p_recall_by_context_normalized_attention": 1.0
+    }
+  ],
+  "rows": [
+    {
+      "context_normalized_attention": 0.2499922513961792,
+      "is_within_ar_order": 1.0,
+      "lag": 1.0,
+      "layer": 0.0,
+      "raw_attention": 0.2499655932188034
+    },
+    {
+      "context_normalized_attention": 0.24995002150535583,
+      "is_within_ar_order": 1.0,
+      "lag": 2.0,
+      "layer": 0.0,
+      "raw_attention": 0.24995002150535583
+    },
+    {
+      "context_normalized_attention": 6.403880661309813e-07,
+      "is_within_ar_order": 1.0,
+      "lag": 3.0,
+      "layer": 0.0,
+      "raw_attention": 6.403880661309813e-07
+    },
+    {
+      "context_normalized_attention": 1.3174396401821435e-14,
+      "is_within_ar_order": 1.0,
+      "lag": 4.0,
+      "layer": 0.0,
+      "raw_attention": 1.3174396401821435e-14
+    },
+    {
+      "context_normalized_attention": 7.614618672744083e-15,
+      "is_within_ar_order": 1.0,
+      "lag": 5.0,
+      "layer": 0.0,
+      "raw_attention": 7.614618672744083e-15
+    },
+    {
+      "context_normalized_attention": 3.826048089461409e-10,
+      "is_within_ar_order": 1.0,
+      "lag": 6.0,
+      "layer": 0.0,
+      "raw_attention": 3.8256797729729897e-10
+    },
+    {
+      "context_normalized_attention": 0.00036121680750511587,
+      "is_within_ar_order": 0.0,
+      "lag": 7.0,
+      "layer": 0.0,
+      "raw_attention": 0.0003612155851442367
+    },
+    {
+      "context_normalized_attention": 0.247969850897789,
+      "is_within_ar_order": 0.0,
+      "lag": 8.0,
+      "layer": 0.0,
+      "raw_attention": 0.2479698359966278
+    },
+    {
+      "context_normalized_attention": 0.0014329924015328288,
+      "is_within_ar_order": 0.0,
+      "lag": 9.0,
+      "layer": 0.0,
+      "raw_attention": 0.0014329926343634725
+    },
+    {
+      "context_normalized_attention": 7.652244171652e-09,
+      "is_within_ar_order": 0.0,
+      "lag": 10.0,
+      "layer": 0.0,
+      "raw_attention": 7.652244171652e-09
+    },
+    {
+      "context_normalized_attention": 2.1312780099785877e-12,
+      "is_within_ar_order": 0.0,
+      "lag": 11.0,
+      "layer": 0.0,
+      "raw_attention": 2.1312780099785877e-12
+    },
+    {
+      "context_normalized_attention": 1.6686861961656696e-11,
+      "is_within_ar_order": 0.0,
+      "lag": 12.0,
+      "layer": 0.0,
+      "raw_attention": 1.6686861961656696e-11
+    },
+    {
+      "context_normalized_attention": 0.00016608602891210467,
+      "is_within_ar_order": 0.0,
+      "lag": 13.0,
+      "layer": 0.0,
+      "raw_attention": 0.00016608602891210467
+    },
+    {
+      "context_normalized_attention": 0.24988101422786713,
+      "is_within_ar_order": 0.0,
+      "lag": 14.0,
+      "layer": 0.0,
+      "raw_attention": 0.24988104403018951
+    },
+    {
+      "context_normalized_attention": 8.936296580941416e-06,
+      "is_within_ar_order": 0.0,
+      "lag": 15.0,
+      "layer": 0.0,
+      "raw_attention": 8.936296580941416e-06
+    },
+    {
+      "context_normalized_attention": 4.3064788117930936e-14,
+      "is_within_ar_order": 0.0,
+      "lag": 16.0,
+      "layer": 0.0,
+      "raw_attention": 4.3064788117930936e-14
+    },
+    {
+      "context_normalized_attention": 2.86255260153443e-19,
+      "is_within_ar_order": 0.0,
+      "lag": 17.0,
+      "layer": 0.0,
+      "raw_attention": 2.86255260153443e-19
+    },
+    {
+      "context_normalized_attention": 2.2957366510583006e-19,
+      "is_within_ar_order": 0.0,
+      "lag": 18.0,
+      "layer": 0.0,
+      "raw_attention": 2.295586466078334e-19
+    },
+    {
+      "context_normalized_attention": 1.9658241257047848e-08,
+      "is_within_ar_order": 0.0,
+      "lag": 19.0,
+      "layer": 0.0,
+      "raw_attention": 1.9654606830954435e-08
+    },
+    {
+      "context_normalized_attention": 1.3566644838647335e-06,
+      "is_within_ar_order": 0.0,
+      "lag": 20.0,
+      "layer": 0.0,
+      "raw_attention": 1.3564356322603999e-06
+    },
+    {
+      "context_normalized_attention": 2.2647984110335528e-07,
+      "is_within_ar_order": 0.0,
+      "lag": 21.0,
+      "layer": 0.0,
+      "raw_attention": 2.2647984110335528e-07
+    },
+    {
+      "context_normalized_attention": 1.6128098205905883e-13,
+      "is_within_ar_order": 0.0,
+      "lag": 22.0,
+      "layer": 0.0,
+      "raw_attention": 1.6128098205905883e-13
+    },
+    {
+      "context_normalized_attention": 1.719421627261311e-17,
+      "is_within_ar_order": 0.0,
+      "lag": 23.0,
+      "layer": 0.0,
+      "raw_attention": 1.719421627261311e-17
+    },
+    {
+      "context_normalized_attention": 1.9771312360273095e-17,
+      "is_within_ar_order": 0.0,
+      "lag": 24.0,
+      "layer": 0.0,
+      "raw_attention": 1.977131070591187e-17
+    },
+    {
+      "context_normalized_attention": 9.717979459339388e-13,
+      "is_within_ar_order": 0.0,
+      "lag": 25.0,
+      "layer": 0.0,
+      "raw_attention": 9.717977290935043e-13
+    },
+    {
+      "context_normalized_attention": 7.837334692339937e-07,
+      "is_within_ar_order": 0.0,
+      "lag": 26.0,
+      "layer": 0.0,
+      "raw_attention": 7.837334692339937e-07
+    },
+    {
+      "context_normalized_attention": 0.0001816922303987667,
+      "is_within_ar_order": 0.0,
+      "lag": 27.0,
+      "layer": 0.0,
+      "raw_attention": 0.0001816922303987667
+    },
+    {
+      "context_normalized_attention": 2.414715254417388e-07,
+      "is_within_ar_order": 0.0,
+      "lag": 28.0,
+      "layer": 0.0,
+      "raw_attention": 2.414715538634482e-07
+    },
+    {
+      "context_normalized_attention": 1.8592922340632256e-12,
+      "is_within_ar_order": 0.0,
+      "lag": 29.0,
+      "layer": 0.0,
+      "raw_attention": 1.8592922340632256e-12
+    },
+    {
+      "context_normalized_attention": 3.0104518680560072e-15,
+      "is_within_ar_order": 0.0,
+      "lag": 30.0,
+      "layer": 0.0,
+      "raw_attention": 3.0104516562977704e-15
+    },
+    {
+      "context_normalized_attention": 1.2701737448286843e-13,
+      "is_within_ar_order": 0.0,
+      "lag": 31.0,
+      "layer": 0.0,
+      "raw_attention": 1.2701737448286843e-13
+    },
+    {
+      "context_normalized_attention": 5.2684536058222875e-05,
+      "is_within_ar_order": 0.0,
+      "lag": 32.0,
+      "layer": 0.0,
+      "raw_attention": 5.2684536058222875e-05
+    },
+    {
+      "context_normalized_attention": 0.0867985337972641,
+      "is_within_ar_order": 1.0,
+      "lag": 1.0,
+      "layer": 1.0,
+      "raw_attention": 0.0840514525771141
+    },
+    {
+      "context_normalized_attention": 0.14078406989574432,
+      "is_within_ar_order": 1.0,
+      "lag": 2.0,
+      "layer": 1.0,
+      "raw_attention": 0.13668814301490784
+    },
+    {
+      "context_normalized_attention": 0.1259678155183792,
+      "is_within_ar_order": 1.0,
+      "lag": 3.0,
+      "layer": 1.0,
+      "raw_attention": 0.12323088943958282
+    },
+    {
+      "context_normalized_attention": 0.10767235606908798,
+      "is_within_ar_order": 1.0,
+      "lag": 4.0,
+      "layer": 1.0,
+      "raw_attention": 0.10424016416072845
+    },
+    {
+      "context_normalized_attention": 0.08199391514062881,
+      "is_within_ar_order": 1.0,
+      "lag": 5.0,
+      "layer": 1.0,
+      "raw_attention": 0.07956509292125702
+    },
+    {
+      "context_normalized_attention": 0.07014112174510956,
+      "is_within_ar_order": 1.0,
+      "lag": 6.0,
+      "layer": 1.0,
+      "raw_attention": 0.0669863149523735
+    },
+    {
+      "context_normalized_attention": 0.055750638246536255,
+      "is_within_ar_order": 0.0,
+      "lag": 7.0,
+      "layer": 1.0,
+      "raw_attention": 0.05378224328160286
+    },
+    {
+      "context_normalized_attention": 0.04173312708735466,
+      "is_within_ar_order": 0.0,
+      "lag": 8.0,
+      "layer": 1.0,
+      "raw_attention": 0.039999041706323624
+    },
+    {
+      "context_normalized_attention": 0.03758061304688454,
+      "is_within_ar_order": 0.0,
+      "lag": 9.0,
+      "layer": 1.0,
+      "raw_attention": 0.036366552114486694
+    },
+    {
+      "context_normalized_attention": 0.030110148712992668,
+      "is_within_ar_order": 0.0,
+      "lag": 10.0,
+      "layer": 1.0,
+      "raw_attention": 0.029022060334682465
+    },
+    {
+      "context_normalized_attention": 0.024449093267321587,
+      "is_within_ar_order": 0.0,
+      "lag": 11.0,
+      "layer": 1.0,
+      "raw_attention": 0.02379719354212284
+    },
+    {
+      "context_normalized_attention": 0.01658370904624462,
+      "is_within_ar_order": 0.0,
+      "lag": 12.0,
+      "layer": 1.0,
+      "raw_attention": 0.016135910525918007
+    },
+    {
+      "context_normalized_attention": 0.01498761773109436,
+      "is_within_ar_order": 0.0,
+      "lag": 13.0,
+      "layer": 1.0,
+      "raw_attention": 0.014612783677875996
+    },
+    {
+      "context_normalized_attention": 0.012150024063885212,
+      "is_within_ar_order": 0.0,
+      "lag": 14.0,
+      "layer": 1.0,
+      "raw_attention": 0.011835619807243347
+    },
+    {
+      "context_normalized_attention": 0.012631748802959919,
+      "is_within_ar_order": 0.0,
+      "lag": 15.0,
+      "layer": 1.0,
+      "raw_attention": 0.012366998940706253
+    },
+    {
+      "context_normalized_attention": 0.011759569868445396,
+      "is_within_ar_order": 0.0,
+      "lag": 16.0,
+      "layer": 1.0,
+      "raw_attention": 0.011496822349727154
+    },
+    {
+      "context_normalized_attention": 0.012093368917703629,
+      "is_within_ar_order": 0.0,
+      "lag": 17.0,
+      "layer": 1.0,
+      "raw_attention": 0.011846312321722507
+    },
+    {
+      "context_normalized_attention": 0.010046886280179024,
+      "is_within_ar_order": 0.0,
+      "lag": 18.0,
+      "layer": 1.0,
+      "raw_attention": 0.009776193648576736
+    },
+    {
+      "context_normalized_attention": 0.008939510211348534,
+      "is_within_ar_order": 0.0,
+      "lag": 19.0,
+      "layer": 1.0,
+      "raw_attention": 0.008678773418068886
+    },
+    {
+      "context_normalized_attention": 0.009028838947415352,
+      "is_within_ar_order": 0.0,
+      "lag": 20.0,
+      "layer": 1.0,
+      "raw_attention": 0.008692029863595963
+    },
+    {
+      "context_normalized_attention": 0.010880916379392147,
+      "is_within_ar_order": 0.0,
+      "lag": 21.0,
+      "layer": 1.0,
+      "raw_attention": 0.01046427059918642
+    },
+    {
+      "context_normalized_attention": 0.011582295410335064,
+      "is_within_ar_order": 0.0,
+      "lag": 22.0,
+      "layer": 1.0,
+      "raw_attention": 0.011119014583528042
+    },
+    {
+      "context_normalized_attention": 0.011574848555028439,
+      "is_within_ar_order": 0.0,
+      "lag": 23.0,
+      "layer": 1.0,
+      "raw_attention": 0.01113053597509861
+    },
+    {
+      "context_normalized_attention": 0.010671205818653107,
+      "is_within_ar_order": 0.0,
+      "lag": 24.0,
+      "layer": 1.0,
+      "raw_attention": 0.010216252878308296
+    },
+    {
+      "context_normalized_attention": 0.00837800744920969,
+      "is_within_ar_order": 0.0,
+      "lag": 25.0,
+      "layer": 1.0,
+      "raw_attention": 0.00799575261771679
+    },
+    {
+      "context_normalized_attention": 0.007077454589307308,
+      "is_within_ar_order": 0.0,
+      "lag": 26.0,
+      "layer": 1.0,
+      "raw_attention": 0.006724147126078606
+    },
+    {
+      "context_normalized_attention": 0.006968370638787746,
+      "is_within_ar_order": 0.0,
+      "lag": 27.0,
+      "layer": 1.0,
+      "raw_attention": 0.006645418703556061
+    },
+    {
+      "context_normalized_attention": 0.005988068412989378,
+      "is_within_ar_order": 0.0,
+      "lag": 28.0,
+      "layer": 1.0,
+      "raw_attention": 0.005736053921282291
+    },
+    {
+      "context_normalized_attention": 0.005544037092477083,
+      "is_within_ar_order": 0.0,
+      "lag": 29.0,
+      "layer": 1.0,
+      "raw_attention": 0.005337334703654051
+    },
+    {
+      "context_normalized_attention": 0.004023206885904074,
+      "is_within_ar_order": 0.0,
+      "lag": 30.0,
+      "layer": 1.0,
+      "raw_attention": 0.003876897506415844
+    },
+    {
+      "context_normalized_attention": 0.0033074701204895973,
+      "is_within_ar_order": 0.0,
+      "lag": 31.0,
+      "layer": 1.0,
+      "raw_attention": 0.0031601199880242348
+    },
+    {
+      "context_normalized_attention": 0.002801388269290328,
+      "is_within_ar_order": 0.0,
+      "lag": 32.0,
+      "layer": 1.0,
+      "raw_attention": 0.002652824157848954
+    }
+  ],
+  "seed": 123,
+  "test_ar_order": 6,
+  "train_ar_order": "6",
+  "use_arcsinh": false,
+  "use_rope": true
+}

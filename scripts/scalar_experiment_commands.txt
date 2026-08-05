@@ -1,0 +1,245 @@
+TSFM AR(p) scalar/no-patching experiment commands
+====================================================
+
+Assumptions
+-----------
+- Project env is synced with uv, e.g.:
+    uv sync
+- Run commands with:
+    uv run python ...
+- Current merged files are in place:
+    src/playground/data/ar.py
+    scripts/experiment_arp_sanity.py
+    scripts/experiment_arp_perturbation.py
+    scripts/experiment_arp_attention.py
+    scripts/experiment_arp_cross_eval_all.py
+    scripts/experiment_arp_mixed_icl.py
+- Scalar/no-patching setting is:
+    --patch-size 1 --patch-stride 1
+  These are defaults in our scripts, so they are not repeated below.
+- Always use:
+    --use-rope
+  because without positional information the AR sanity test fails.
+- use --device cpu to force CPU.
+
+
+====================================================
+POINT 1 — AR(1) SANITY
+====================================================
+
+Train AR(1) specialist:
+
+uv run python scripts/experiment_arp_sanity.py --ar-order 1 --steps 5000 --use-rope --device auto --output-dir outputs/ar1/scalar/sanity --run-name ar1_scalar_rope_seed7
+
+
+Optional diagnostic only: AR(1) without RoPE, expected to fail or be much worse:
+
+uv run python scripts/experiment_arp_sanity.py --ar-order 1 --steps 5000 --device auto --output-dir outputs/ar1/scalar/sanity --run-name ar1_scalar_no_rope_seed7
+
+
+Optional diagnostic only: AR(1) with arcsinh + RoPE:
+
+uv run python scripts/experiment_arp_sanity.py --ar-order 1 --steps 5000 --use-rope --use-arcsinh --device auto --output-dir outputs/ar1/scalar/sanity --run-name ar1_scalar_rope_arcsinh_seed7
+
+
+====================================================
+POINT 2 — ATTENTION VS GROUND TRUTH, AR(1)
+====================================================
+
+Perturbation on AR(1) specialist:
+
+uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar1/scalar/sanity/ar1_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --device auto --output-dir outputs/ar1/scalar/perturbation --run-name ar1_scalar_rope_seed7_perturbation
+
+uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar15/scalar/sanity/ar15_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --device auto --output-dir outputs/ar15/scalar/perturbation --run-name ar15_scalar_rope_seed7_perturbation
+
+Attention on AR(1) specialist:
+
+uv run python scripts/experiment_arp_attention.py --checkpoint outputs/ar1/scalar/sanity/ar1_scalar_rope_seed7_best_model.pt --eval-n 4000 --device auto --output-dir outputs/ar1/scalar/attention --run-name ar1_scalar_rope_seed7_attention
+
+uv run python scripts/experiment_arp_attention.py --checkpoint outputs/ar15/scalar/sanity/ar15_scalar_rope_seed7_best_model.pt --eval-n 4000 --device auto --output-dir outputs/ar15/scalar/attention --run-name ar15_scalar_rope_seed7_attention
+
+====================================================
+POINT 3 — SCALING p: AR(1)..AR(7) SPECIALISTS
+====================================================
+
+Train all specialist models AR(1)..AR(7):
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_sanity.py --ar-order $P --steps 5000 --use-rope --device auto --output-dir outputs/ar$P/scalar/sanity --run-name ar${P}_scalar_rope_seed7; done
+
+
+Run perturbation for all specialist models AR(1)..AR(7):
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar$P/scalar/sanity/ar${P}_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --device auto --output-dir outputs/ar$P/scalar/perturbation --run-name ar${P}_scalar_rope_seed7_perturbation; done
+
+
+Run attention for all specialist models AR(1)..AR(7):
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_attention.py --checkpoint outputs/ar$P/scalar/sanity/ar${P}_scalar_rope_seed7_best_model.pt --eval-n 4000 --device auto --output-dir outputs/ar$P/scalar/attention --run-name ar${P}_scalar_rope_seed7_attention; done
+
+
+====================================================
+POINT 4a — CROSS-ORDER GENERALIZATION, SPECIALISTS
+====================================================
+
+Run all train_p -> test_p evaluations, excluding diagonal.
+This runs 42 evaluations for AR(1)..AR(7):
+
+uv run python scripts/experiment_arp_cross_eval_all.py --orders 1 2 3 4 5 6 7 --eval-n 4000 --device auto --output-dir outputs/cross_order/scalar --run-name arp_1to7_cross_eval
+
+
+Optional: regenerate readable heatmaps from the existing JSON only, no evaluation rerun:
+
+uv run python scripts/experiment_arp_cross_eval_all.py --from-json outputs/cross_order/scalar/arp_1to7_cross_eval.json --output-dir outputs/cross_order/scalar --run-name arp_1to7_cross_eval_readable
+
+
+Optional: include diagonal too, giving 49 evaluations instead of 42:
+
+uv run python scripts/experiment_arp_cross_eval_all.py --orders 1 2 3 4 5 6 7 --include-diagonal --eval-n 4000 --device auto --output-dir outputs/cross_order/scalar --run-name arp_1to7_cross_eval_with_diag
+
+
+====================================================
+POINT 4b — MIXED-ORDER TRAINING p in {1..5}
+====================================================
+
+Train one mixed model on AR(1)..AR(5):
+
+uv run python scripts/experiment_arp_sanity.py --ar-order mixed --min-ar-order 1 --max-ar-order 5 --steps 12000 --use-rope --device auto --output-dir outputs/mixed_1_5/scalar/sanity --run-name mixed_ar1_5_scalar_rope_seed7
+
+
+Expected main output checkpoint:
+
+outputs/mixed_1_5/scalar/sanity/mixed_ar1_5_scalar_rope_seed7_best_model.pt
+
+
+====================================================
+POINT 4b + POINT 5 — MIXED EVALUATION + ICL / ADAPTIVE RECEPTIVE FIELD
+====================================================
+
+Evaluate the same mixed checkpoint on AR(1)..AR(7).
+This computes forecasting metrics, perturbation metrics, attention metrics, and heatmaps:
+
+uv run python scripts/experiment_arp_mixed_icl.py --checkpoint outputs/mixed_1_5/scalar/sanity/mixed_ar1_5_scalar_rope_seed7_best_model.pt --test-orders 1 2 3 4 5 6 7 --eval-n 4000 --device auto --output-dir outputs/mixed_1_5/scalar/icl --run-name mixed_ar1_5_test_ar1_7
+
+
+Key expected outputs:
+
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7.json
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7_summary.csv
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7_perturbation_mean_abs_delta_heatmap.png
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7_perturbation_mse_increase_heatmap.png
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7_attention_last_layer_heatmap.png
+outputs/mixed_1_5/scalar/icl/mixed_ar1_5_test_ar1_7_summary_metrics.png
+
+
+====================================================
+FULL SCALAR PIPELINE, CLEAN RERUN
+====================================================
+
+Run these in order if repeating the scalar project from scratch:
+
+1) Train specialists AR(1)..AR(7)
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_sanity.py --ar-order $P --steps 5000 --use-rope --device auto --output-dir outputs/ar$P/scalar/sanity --run-name ar${P}_scalar_rope_seed7; done
+
+
+2) Perturbation for specialists
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar$P/scalar/sanity/ar${P}_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --device auto --output-dir outputs/ar$P/scalar/perturbation --run-name ar${P}_scalar_rope_seed7_perturbation; done
+
+
+3) Attention for specialists
+
+for P in 1 2 3 4 5 6 7; do uv run python scripts/experiment_arp_attention.py --checkpoint outputs/ar$P/scalar/sanity/ar${P}_scalar_rope_seed7_best_model.pt --eval-n 4000 --device auto --output-dir outputs/ar$P/scalar/attention --run-name ar${P}_scalar_rope_seed7_attention; done
+
+
+4) Cross-order specialist generalization
+
+uv run python scripts/experiment_arp_cross_eval_all.py --orders 1 2 3 4 5 6 7 --eval-n 4000 --device auto --output-dir outputs/cross_order/scalar --run-name arp_1to7_cross_eval
+
+
+5) Readable cross-order plots from JSON
+
+uv run python scripts/experiment_arp_cross_eval_all.py --from-json outputs/cross_order/scalar/arp_1to7_cross_eval.json --output-dir outputs/cross_order/scalar --run-name arp_1to7_cross_eval_readable
+
+
+6) Train mixed AR(1)..AR(5)
+
+uv run python scripts/experiment_arp_sanity.py --ar-order mixed --min-ar-order 1 --max-ar-order 5 --steps 12000 --use-rope --device auto --output-dir outputs/mixed_1_5/scalar/sanity --run-name mixed_ar1_5_scalar_rope_seed7
+
+
+7) Evaluate mixed checkpoint on AR(1)..AR(7), including ICL analysis
+
+uv run python scripts/experiment_arp_mixed_icl.py --checkpoint outputs/mixed_1_5/scalar/sanity/mixed_ar1_5_scalar_rope_seed7_best_model.pt --test-orders 1 2 3 4 5 6 7 --eval-n 4000 --device auto --output-dir outputs/mixed_1_5/scalar/icl --run-name mixed_ar1_5_test_ar1_7
+
+
+====================================================
+CONTEXT-SHIFT PERTURBATION (slot vs content)
+====================================================
+
+Withhold the most recent N true lags at eval time (fixed target). Model lag k
+holds true lag k+N. N=1 withholds true lag 1. Use existing specialists; no retrain.
+Outputs use suffix _shift{N} so they do not overwrite baseline perturbation files.
+
+# AR(6), N=1
+uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar6/scalar/sanity/ar6_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --context-shift 1 --device auto --output-dir outputs/ar6/scalar/perturbation --run-name ar6_scalar_rope_seed7_perturbation
+
+# AR(7), N=1
+uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar7/scalar/sanity/ar7_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --context-shift 1 --device auto --output-dir outputs/ar7/scalar/perturbation --run-name ar7_scalar_rope_seed7_perturbation
+
+# Follow-up: any N (e.g. shift 2)
+# uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar7/scalar/sanity/ar7_scalar_rope_seed7_best_model.pt --eval-n 4000 --perturbation permute --context-shift 2 --device auto --output-dir outputs/ar7/scalar/perturbation --run-name ar7_scalar_rope_seed7_perturbation
+
+
+====================================================
+TRAIN WITH CONTEXT-SHIFT (misaligned / multi-step task)
+====================================================
+
+Train while withholding the most recent N true lags; target stays the next step
+after the full window. Tests whether a slot-2 bias is hard-wired or learnable-away.
+Checkpoint args include train_context_shift. For perturbation of these models, pass
+matching --context-shift N so eval stays on the same misaligned task.
+
+# Train AR(15) with N=1
+uv run python scripts/experiment_arp_sanity.py --ar-order 15 --steps 9000 --use-rope --train-context-shift 1 --device auto --output-dir outputs/ar15/scalar/sanity_trainshift1 --run-name ar15_scalar_rope_seed7_trainshift1
+
+# Perturbation on that checkpoint (keep eval shift matched to train)
+uv run python scripts/experiment_arp_perturbation.py --checkpoint outputs/ar15/scalar/sanity_trainshift1/ar15_scalar_rope_seed7_trainshift1_best_model.pt --eval-n 4000 --perturbation permute --context-shift 1 --device auto --output-dir outputs/ar15/scalar/perturbation_trainshift1 --run-name ar15_scalar_rope_seed7_trainshift1_perturbation
+
+
+====================================================
+CONTEXT-SHIFT SUITE (train ± shift × AR1-7 × 3 perturbations)
+====================================================
+
+Retrains AR(1)..AR(7) with train_context_shift=0 and =1, runs attention on each
+checkpoint, runs perturbation at eval shift 0 and 1 for permute/zero/noise, and
+writes comparison plots (both blues + both oranges). Sanity scatters and attention
+live under each ar*/sanity/ and ar*/attention/.
+
+Full suite (long: 14 trainings + 14 attention + many evals). Default root is
+outputs/context_shift_suite_seed{seed} (seed appears in folder + plot titles):
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --device auto
+
+Rerun with a different seed (writes a separate folder, does not overwrite seed7):
+
+uv run python scripts/run_context_shift_suite.py --seed 13 --device auto
+
+Dry-run (print plan only):
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --dry-run
+
+Attention-only resume on an existing suite (skip train + perturb):
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --skip-train --skip-perturb --device auto
+
+Skip attention entirely:
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --no-attention --device auto
+
+Smaller smoke (AR6-7, permute only):
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --orders 6 7 --perturbations permute --steps 500 --eval-n 256 --device auto
+
+Resume / skip finished pieces:
+
+uv run python scripts/run_context_shift_suite.py --seed 7 --skip-train --skip-perturb --skip-attention --device auto
