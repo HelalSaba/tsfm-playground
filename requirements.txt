@@ -1,0 +1,19 @@
+# Runtime dependencies for TSFM Playground.
+# Python >= 3.11
+#
+# Install:
+#   pip install -r requirements.txt
+#   pip install -e .
+#
+# Or with uv (preferred):
+#   uv sync
+
+torch>=2.12.0
+numpy>=2.4.6
+einops>=0.8.2
+matplotlib>=3.11.0
+jupyter
+
+# Optional development tools (also in pyproject.toml):
+# pre-commit>=4.6.0
+# ruff>=0.15.17
