@@ -236,13 +236,3 @@ uv run python scripts/experiment_arp_sanity.py \
   --run-name ar1_smoke
 ```
 
----
-
-## Development
-
-See `DEVELOP.md` for formatting and contribution notes.
-
-```bash
-uv run ruff check .
-uv run ruff format .
-```
